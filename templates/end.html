@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}Survey End{% endblock %}
+
+{% block content %}
+
+    <h1>You have reached the end of the survey!</h1>
+        <p>Thank you for your time and cooperation.</p>
+    <h3>Your responses are as follows:</h3>
+
+    <ol class="list">
+        {% for response in responses %}
+            
+        <li class="response"> {{response}}</li>
+            
+        {% endfor %}
+    </ol>
+
+{% endblock %}
